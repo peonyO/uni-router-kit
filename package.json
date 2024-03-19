@@ -1,0 +1,43 @@
+{
+  "name": "uni-router-kit",
+  "version": "0.3.0",
+  "description": "一个用于提升 uni-app 开发体验以及对路由管理的扩展套件。",
+  "author": "支新杰",
+  "license": "ISC",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack",
+    "test": "cross-env ADDRESS=home NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "keywords": [
+    "uniapp",
+    "uni-router",
+    "uni-router-kit",
+    "unipp-router"
+  ],
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "bin": {
+    "rkit": "bin/index.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.1.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.0",
+    "colors": "^1.4.0",
+    "commander": "^6.2.1",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.6",
+    "inquirer": "^7.3.3",
+    "jsonminify": "^0.4.1",
+    "prettier": "^2.4.1"
+  }
+}
